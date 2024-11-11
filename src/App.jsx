@@ -1,8 +1,9 @@
+import Hero from "./component/Hero"
 
 function App() {
   return (
     <>
-      hello this my
+      <Hero/>
     </>
   )
 }
