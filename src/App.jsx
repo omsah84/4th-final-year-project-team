@@ -1,8 +1,9 @@
+import Skills from "./component/Skills"
 
 function App() {
   return (
     <>
-      hello this my
+      <Skills/>
     </>
   )
 }
