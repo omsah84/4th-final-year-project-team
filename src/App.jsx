@@ -1,10 +1,10 @@
-
+import Mywork from "./components/Mywork"
 function App() {
   return (
     <>
-      hello this my
+      <Mywork/>
     </>
   )
 }
 
-export default App
+export default App;
