@@ -7,7 +7,7 @@ function Skills() {
 
             <div className="container">
                 <div className="container1">
-
+                    <h1>hello</h1>
                 </div>
                 <div className="container2">
 
@@ -19,7 +19,7 @@ function Skills() {
 
                 </div>
                 <div className="container5">
-                    
+
                 </div>
             </div>
         </>
