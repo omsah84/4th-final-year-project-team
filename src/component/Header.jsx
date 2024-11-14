@@ -42,7 +42,7 @@ function Header() {
               textDecoration: 'none',
             }}
           >
-            MyWebsite
+           My Portfolio
           </Typography>
 
           {/* Mobile Menu Icon */}
