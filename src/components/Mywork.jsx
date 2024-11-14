@@ -40,6 +40,7 @@ const Container = styled("div")({
   display: "flex",
   flexWrap: "wrap",
   width: "100%",
+  height:'300px',
   gap: "10px",
   justifyContent: "center",
   backgroundColor:"black",
@@ -49,7 +50,7 @@ const Item = styled("div")({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  height: "500px",
+ 
   width: "300px",
   padding: "10px",
   overflow: "hidden",
