@@ -1,8 +1,8 @@
 import { styled } from "@mui/material/styles";
 import img from "../../public/assets/vikash.jpg";
-import imge from "../../public/assets/Krishna.jpg";
+import imge from "../../public/assets/Krish.jpg";
 import imges from "../../public/assets/code.jpg";
-import imgeess from "../../public/code2.jpg";
+import imgeess from "../../public/assets/code2.jpg";
 
 function Mywork() {
   return (
@@ -13,7 +13,7 @@ function Mywork() {
           <Img src={img} alt="vikash" />
         </Item>
         <Item>
-          <Img src={imge} alt="Krishna" />
+          <Img src={imge} alt="Krish" />
         </Item>
         <Item>
           <Img src={imges} alt="code" />
