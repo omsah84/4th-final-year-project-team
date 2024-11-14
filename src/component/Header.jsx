@@ -62,6 +62,7 @@ function Header() {
               anchorOrigin={{
                 vertical: 'top',
                 horizontal: 'left',
+
               }}
               keepMounted
               transformOrigin={{
@@ -76,7 +77,7 @@ function Header() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem sx={{width:'500px',bgcolor:'black',color:'gray' ,display: { xs: 'flex',justifyContent:'center' }}} key={page} onClick={handleCloseNavMenu}>
+                <MenuItem sx={{width:'500px',height:'auto',color:'gray' ,display: { xs: 'flex',justifyContent:'center' }}} key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
