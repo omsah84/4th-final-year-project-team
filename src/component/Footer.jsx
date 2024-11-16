@@ -13,9 +13,9 @@ const Container = styled('div')({
   justifyContent: 'center',
   padding: '16px',
   margin: '16px',
-  backgroundColor: '#f9f9f9',
   gap: '8px',
   textAlign: 'center',
+  borderTop:'2px solid white',
 });
 
 const LinkContainer = styled('div')({
@@ -41,9 +41,9 @@ function Footer() {
         <StyledLink href="#"><WhatsAppIcon/></StyledLink>
         <StyledLink href="#"><FacebookIcon /></StyledLink>
         <StyledLink href="#"><InstagramIcon /></StyledLink>
-        <StyledLink href="#"><TelegramIcon /></StyledLink>
+        <StyledLink href="https://web.telegram.org/k/"><TelegramIcon /></StyledLink>
         <StyledLink href="#"><GitHubIcon /></StyledLink>
-        <StyledLink href="#"><LinkedInIcon /></StyledLink>
+        <StyledLink href="https://www.linkedin.com/in/vikash-kumar-upadhyay-210ba4328/"><LinkedInIcon /></StyledLink>
       </LinkContainer>
     </Container>
   );
