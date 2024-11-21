@@ -1,3 +1,4 @@
+import AboutMe from "./component/AboutMe"
 import Footer from "./component/Footer"
 import Header from "./component/Header"
 import Skills from "./component/Skills"
@@ -7,6 +8,7 @@ function App() {
     <>
       <Header/>
       <Skills/>
+      <AboutMe/>
       <Footer/>
     </>
   )

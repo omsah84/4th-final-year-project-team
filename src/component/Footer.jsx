@@ -15,7 +15,7 @@ const Container = styled('div')({
   margin: '16px',
   gap: '8px',
   textAlign: 'center',
-  borderTop:'2px solid white',
+  borderTop: '2px solid white',
 });
 
 const LinkContainer = styled('div')({
@@ -38,11 +38,11 @@ function Footer() {
     <Container>
       <p>© 2024 Vikash Kumar Upadhyay. All rights reserved.</p>
       <LinkContainer>
-        <StyledLink href="#"><WhatsAppIcon/></StyledLink>
-        <StyledLink href="#"><FacebookIcon /></StyledLink>
-        <StyledLink href="#"><InstagramIcon /></StyledLink>
+        <StyledLink href="#"><WhatsAppIcon /></StyledLink>
+        <StyledLink href="https://www.facebook.com/vikash.upadhyay.1656854"><FacebookIcon /></StyledLink>
+        <StyledLink href="https://www.instagram.com/_vikash_71_/"><InstagramIcon /></StyledLink>
         <StyledLink href="https://web.telegram.org/k/"><TelegramIcon /></StyledLink>
-        <StyledLink href="#"><GitHubIcon /></StyledLink>
+        <StyledLink href="https://github.com/uvikash"><GitHubIcon /></StyledLink>
         <StyledLink href="https://www.linkedin.com/in/vikash-kumar-upadhyay-210ba4328/"><LinkedInIcon /></StyledLink>
       </LinkContainer>
     </Container>
