@@ -1,19 +1,55 @@
-function App() {
+import { styled } from "@mui/material/styles";
+
+function Hero() {
   return (
-      <>
-          <div>
-              <h1 className="text-hero">
-                  Hey I am <span className="text-gradient">Shashi Singh</span>, I make software
-              </h1>
-              <p className="desc-hero">
-                  I make software, teach and play cricket in my free time!
-              </p>
-              <div className="hero-btns">
-                  {/* Add buttons here if needed */}
-              </div>
-          </div>
-      </>
+    <>
+      <Container>
+        <div
+          className="left"
+          style={{
+            width: "100%",
+            display:"flex",
+            alignItems:"center",
+            justifyContent:"center",
+           
+          }}
+        >
+          <h1 >
+            Hey, I am <span style={{color:"red"}}>Shashi Singh</span><br/> I make software</h1>
+        </div>
+        <div
+          className="right"
+          style={{
+            width: "100%",
+            display:"flex",
+            alignItems:"center",
+            justifyContent:"center",
+          }}
+        >
+          <StyledImage src="/assets/kumar.jpg" alt="Portrait of Shashi Singh" />
+        </div>
+      </Container>
+
+    </>
   );
 }
 
-export default App;
+export default Hero;
+
+const StyledImage = styled("img")({
+  width: "250px",
+  height: "250px",
+  borderRadius: "50%",
+  marginTop: "1rem",
+});
+
+const Container = styled('div')(({ theme }) => ({
+  width:"100",
+  display:"flex",
+  textAlign:"center",
+  justifyContent:"space-around",
+  [theme.breakpoints.down('md')]: {
+    flexDirection: 'column-reverse',
+  },
+
+}));
