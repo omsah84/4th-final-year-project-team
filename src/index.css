@@ -20,10 +20,16 @@
   box-sizing: border-box;
 }
 
+body{
+  overflow-x: hidden;
+}
+
+
+
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
-    background-color: #ffffff;
+    color: white;
+    background-color: black;
   }
 }

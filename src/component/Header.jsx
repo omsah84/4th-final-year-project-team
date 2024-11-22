@@ -27,13 +27,33 @@ function Header() {
     <AppBar position="static" sx={{ bgcolor: 'black', borderBottom: '2px solid red' }}>
       <Container>
         <Toolbar disableGutters sx={{ justifyContent: 'center', alignItems: 'center' }}>
+          {/* Branding */}
+          <Typography
+            variant="h6"
+            noWrap
+            component="a"
+            href="/"
+            sx={{
+              mr: 2,
+              display: { md: 'flex' },
+              fontFamily: 'monospace',
+              fontWeight: 700,
+              color: 'inherit',
+              textDecoration: 'none',
+            }}
+          >
+           My Portfolio
+          </Typography>
+
           {/* Mobile Menu Icon */}
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } , justifyContent: 'right'}}>
             <IconButton
               size="large"
               aria-label="open menu"
               onClick={handleOpenNavMenu}
               color="inherit"
+             
+           
             >
               <MenuIcon />
             </IconButton>
@@ -42,20 +62,22 @@ function Header() {
               anchorOrigin={{
                 vertical: 'top',
                 horizontal: 'left',
+
               }}
               keepMounted
               transformOrigin={{
                 vertical: 'top',
                 horizontal: 'left',
+               
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
               sx={{
-                display: { xs: 'block', md: 'none' },
+                display: { xs: 'block', md: 'none', },
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
+                <MenuItem sx={{width:'500px',height:'auto',color:'gray' ,display: { xs: 'flex',justifyContent:'center' }}} key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
@@ -63,7 +85,7 @@ function Header() {
           </Box>
 
           {/* Desktop Menu */}
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex'}, justifyContent: 'center' }}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}>
             {pages.map((page) => (
               <Button
                 key={page}
