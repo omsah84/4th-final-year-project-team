@@ -74,10 +74,14 @@ function Header() {
               onClose={handleCloseNavMenu}
               sx={{
                 display: { xs: 'block', md: 'none', },
+                '& .MuiPaper-root': {
+                  width: '100%',
+                  textAlign: 'center',
+                },
               }}
             >
               {pages.map((page) => (
-                <MenuItem sx={{width:'500px',height:'auto',color:'gray' ,display: { xs: 'flex',justifyContent:'center' }}} key={page} onClick={handleCloseNavMenu}>
+                <MenuItem sx={{maxwidth:'500px',height:'auto',color:'gray' ,display: { xs: 'flex',justifyContent:'center' }}} key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}

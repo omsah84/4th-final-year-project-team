@@ -114,7 +114,6 @@ const Container = styled('div')(({ theme }) => ({
     height: 'fit-content',
     display: 'flex',
     justifyContent: 'space-around',
-    // margin: '15px',
     padding: '15px',
     gap: '10px',
     [theme.breakpoints.down('md')]: {
