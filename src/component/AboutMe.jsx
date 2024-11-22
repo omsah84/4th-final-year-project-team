@@ -20,7 +20,8 @@ function AboutMe() {
                     <img src={image} alt="vikash" style={{
                         width: "250px",
                         height: "250px",
-                        borderRadius: "50%"
+                        borderRadius: "50%",
+                        border:"2px solid blue"
 
                     }} />
                     <p>
