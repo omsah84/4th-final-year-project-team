@@ -66,8 +66,8 @@ const SkillsContainer = styled('div')({
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
-    gap: '20px',
-    padding: '50px 100px 100px 100px',
+    gap: '5px',
+    padding: '25px 20px 20px 20px',
     backgroundColor:'black'
 
 });

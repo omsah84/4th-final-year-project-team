@@ -51,7 +51,7 @@ function Header() {
               size="large"
               aria-label="open menu"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              sx={{ color: 'red' }}
              
            
             >
@@ -81,7 +81,7 @@ function Header() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem sx={{maxwidth:'500px',height:'auto',color:'gray' ,display: { xs: 'flex',justifyContent:'center' }}} key={page} onClick={handleCloseNavMenu}>
+                <MenuItem sx={{maxwidth:'500px',height:'auto',color:'gray' ,border:'',display: { md: 'flex',justifyContent:'center' }}} key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
