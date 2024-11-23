@@ -9,40 +9,26 @@ const workList = [
     par: "Lorem ipsum dolor sit amet consectetur",
   },
   {
-    img: "https://via.placeholder.com/150",
+    img: "/image/code.png",
     title: "Project 2",
     par: "Lorem ipsum dolor sit amet consectetur",
   },
   {
-    img: "https://via.placeholder.com/150",
+    img: "/image/kri.png",
     title: "Project 3",
     par: "Lorem ipsum dolor sit amet consectetur",
   },
   {
-    img: "https://via.placeholder.com/150",
+    img: "/image/page.png",
     title: "Project 4",
     par: "Lorem ipsum dolor sit amet consectetur",
   },
   {
-    img: "https://via.placeholder.com/150",
+    img: "/image/ss.png",
     title: "Project 5",
     par: "Lorem ipsum dolor sit amet consectetur",
   },
-  {
-    img: "https://via.placeholder.com/150",
-    title: "Project 6",
-    par: "Lorem ipsum dolor sit amet consectetur",
-  },
-  {
-    img: "https://via.placeholder.com/150",
-    title: "Project 7",
-    par: "Lorem ipsum dolor sit amet consectetur",
-  },
-  {
-    img: "https://via.placeholder.com/150",
-    title: "Project 8",
-    par: "Lorem ipsum dolor sit amet consectetur",
-  },
+ 
 ];
 
 function MyWork() {
@@ -98,10 +84,10 @@ const WorkCard = styled("div")(() => ({
   overflow: "hidden",
   img: {
     width: "100%",
-    height: "auto",
+    
     borderRadius: "8px 8px 0 0",
     objectFit: "cover",
-    height: "200px",
+    height: "150px",
   },
   h5: {
     margin: "10px 0",

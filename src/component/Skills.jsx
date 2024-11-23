@@ -46,7 +46,7 @@ function Skills() {
                             </Stack>
                         </SkillItem>
                     ))}
-                    <button>more.</button>
+                  
                 </SkillsContainer>
             </div>
         </>
@@ -81,8 +81,9 @@ const SkillItem = styled('div')({
     width: '150px',
     backgroundColor: '#FFFFFF80',
     color: 'white',
-    borderRadius: '2px',
-    border: '2px solid red',
+    padding:"3px",
+    borderRadius: '3px',
+    boxShadow:"1px 1px 10px red",
     cursor: "pointer", 
 
     '&:hover': { 
