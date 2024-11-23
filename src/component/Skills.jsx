@@ -46,6 +46,7 @@ function Skills() {
                             </Stack>
                         </SkillItem>
                     ))}
+                    <button>more.</button>
                 </SkillsContainer>
             </div>
         </>

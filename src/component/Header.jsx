@@ -10,7 +10,7 @@ import Container from '@mui/material/Container';
 import MenuIcon from '@mui/icons-material/Menu';
 import Typography from '@mui/material/Typography';
 
-const pages = ['Home', 'Skills', 'My Work', 'About Us', 'Contact Us'];
+const pages = [{nav:"/", list:"Home"},{nav:"#aboutus", list:"About Us"},{nav:"#contact", list:"Contact Us"},{nav:"#mywork", list:"My Work"} ];
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -51,7 +51,7 @@ function Header() {
               size="large"
               aria-label="open menu"
               onClick={handleOpenNavMenu}
-              color="inherit"
+              sx = {{color:"red"}}
              
            
             >
@@ -80,9 +80,9 @@ function Header() {
                 },
               }}
             >
-              {pages.map((page) => (
-                <MenuItem sx={{maxwidth:'500px',height:'auto',color:'gray' ,display: { xs: 'flex',justifyContent:'center' }}} key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+              {pages.map((page,index) => (
+                <MenuItem sx={{maxwidth:'500px',height:'auto',color:'gray' ,display: { xs: 'flex',justifyContent:'center' }}} key={index} onClick={handleCloseNavMenu}>
+                  <Typography textAlign="center">{page.list}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -90,13 +90,14 @@ function Header() {
 
           {/* Desktop Menu */}
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, justifyContent: 'center' }}>
-            {pages.map((page) => (
+            {pages.map((page, index) => (
               <Button
-                key={page}
+                key={index}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
+                href={page.nav}
               >
-                {page}
+                {page.list}
               </Button>
             ))}
           </Box>
