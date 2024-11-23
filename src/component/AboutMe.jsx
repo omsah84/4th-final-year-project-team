@@ -10,18 +10,22 @@ function AboutMe() {
             <Container>
                 <div className="Aboutus" style={{
                     width: "100%",
-                    // margin: "1px",
+
                     border: "2px solid red",
                     textAlign: "center",
                     padding: "5px",
 
                 }}>
                     <h1>About Me</h1>
-                    <img src={image} alt="vikash" style={{
+                    <ImgStyle src={image} alt="vikash" style={{
                         width: "250px",
                         height: "250px",
                         borderRadius: "50%",
-                        border:"2px solid blue"
+                        padding:"3px",
+                        boxShadow: "0px 0px 10px red",
+                        cursor: "pointer",
+
+
 
                     }} />
                     <p>
@@ -36,6 +40,7 @@ function AboutMe() {
                     border: "2px solid red",
                     textAlign: "center",
                     padding: "5px",
+
 
                 }}>
                     <h1>Contacat Us</h1>
@@ -125,3 +130,11 @@ const Container = styled('div')(({ theme }) => ({
 
 }));
 
+const ImgStyle = styled('img')(({ theme }) => ({
+
+    '&:hover': { 
+        transform: 'scale(1.1)', 
+        boxShadow: '2px 4px 10px red',
+    },
+
+}));

@@ -58,17 +58,20 @@ const Header = styled('h1')({
     display: 'flex',
     justifyContent: 'center',
     padding: '10px',
-    backgroundColor: 'black',
-    color: 'white',
+   
+
+    
 });
 
 const SkillsContainer = styled('div')({
     display: 'flex',
     flexWrap: 'wrap',
     justifyContent: 'space-around',
-    gap: '20px',
-    padding: '50px 100px 100px 100px',
-    backgroundColor:'black'
+    gap: '10px',
+    padding: '20px 25px 25px 25px',
+    backgroundColor:'black',
+    
+    
 
 });
 
@@ -77,4 +80,13 @@ const SkillItem = styled('div')({
     width: '150px',
     backgroundColor: '#FFFFFF80',
     color: 'white',
+    borderRadius: '2px',
+    border: '2px solid red',
+    cursor: "pointer", 
+
+    '&:hover': { 
+        transform: 'scale(1.05)', 
+        boxShadow: '2px 4px 8px red',
+    },
+    
 });

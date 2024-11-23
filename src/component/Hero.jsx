@@ -15,7 +15,7 @@ function Hero() {
           }}
         >
           <h1 >
-            Hey, I am <span style={{color:"red"}}>Shashi Singh</span><br/> I make software</h1>
+            Hey, I am <span style={{color:"red"}}>Vikash Kumar Upadhyay</span><br/> I make software</h1>
         </div>
         <div
           className="right"
@@ -26,7 +26,7 @@ function Hero() {
             justifyContent:"center",
           }}
         >
-          <StyledImage src="/assets/kumar.jpg" alt="Portrait of Shashi Singh" />
+          <StyledImage src="/assets/vikash.jpg" alt="Portrait of Vikash" />
         </div>
       </Container>
 
@@ -41,6 +41,15 @@ const StyledImage = styled("img")({
   height: "250px",
   borderRadius: "50%",
   marginTop: "1rem",
+  boxShadow: "0px 0px 10px red",
+  cursor: "pointer", 
+
+  '&:hover': { 
+    transform: 'scale(1.1)', 
+    boxShadow: '2px 4px 10px red',
+},
+  
+   
 });
 
 const Container = styled('div')(({ theme }) => ({
