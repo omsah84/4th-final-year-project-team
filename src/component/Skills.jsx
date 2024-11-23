@@ -34,8 +34,8 @@ const skillsData = [
 function Skills() {
     return (
         <>
-            <Header>Skills</Header>
-            <div className="container">
+            <Header id='myskill'>Skills</Header>
+            <div className="container" >
                 <SkillsContainer>
                     {skillsData.map((skill, index) => (
                         <SkillItem key={index}>
@@ -88,6 +88,7 @@ const SkillItem = styled('div')({
     '&:hover': { 
         transform: 'scale(1.05)', 
         boxShadow: '2px 4px 8px red',
+        transition:"0.8s"
     },
     
 });

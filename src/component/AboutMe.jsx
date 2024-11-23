@@ -1,5 +1,4 @@
 import { styled } from "@mui/material/styles";
-import image from "../../public/assets/vikash.jpg"
 
 
 
@@ -17,7 +16,7 @@ function AboutMe() {
 
                 }}>
                     <h1>About Me</h1>
-                    <ImgStyle src={image} alt="vikash" style={{
+                    <ImgStyle src="/image/vikash.jpg" alt="vikash" style={{
                         width: "250px",
                         height: "250px",
                         borderRadius: "50%",
@@ -29,12 +28,12 @@ function AboutMe() {
 
                     }} />
                     <p>
-                        My name is <span style={{ color: "red" }}>Vikash Kumar Upadhyay</span>, and I am a dedicated Web Developer skilled in creating responsive, user-friendly websites using HTML, CSS, JavaScript, and modern frameworks. I am passionate about delivering seamless user experiences and staying updated with the latest web technologies." 😊
+                        My name is <span style={{ color: "red" }}>Vikash Kumar Upadhyay</span>, and I am a dedicated Web Developer skilled in creating responsive, user-friendly websites using HTML, CSS, JavaScript, and modern frameworks. I am passionate about delivering seamless user experiences and staying updated with the latest web technologies. 😊
                     </p>
 
                 </div>
 
-                <div className="contactus" style={{
+                <div className="contactus" id="contact" style={{
                     width: "100%",
                     margin: "2px",
                     border: "2px solid red",
@@ -135,6 +134,7 @@ const ImgStyle = styled('img')(({ theme }) => ({
     '&:hover': { 
         transform: 'scale(1.1)', 
         boxShadow: '2px 4px 10px red',
+        transition:"0.8s"
     },
 
 }));

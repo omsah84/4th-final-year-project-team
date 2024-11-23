@@ -4,7 +4,7 @@ import { useTransition } from "react";
 
 const workList = [
   {
-    img: "https://via.placeholder.com/150",
+    img: "/image/port.png",
     title: "Project 1",
     par: "Lorem ipsum dolor sit amet consectetur",
   },
@@ -95,10 +95,13 @@ const WorkCard = styled("div")(() => ({
   padding: "10px",
   boxShadow: "0px 0px 10px red",
   borderRadius: "8px",
+  overflow: "hidden",
   img: {
     width: "100%",
     height: "auto",
     borderRadius: "8px 8px 0 0",
+    objectFit: "cover",
+    height: "200px",
   },
   h5: {
     margin: "10px 0",

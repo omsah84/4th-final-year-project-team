@@ -26,7 +26,7 @@ function Hero() {
             justifyContent:"center",
           }}
         >
-          <StyledImage src="/assets/vikash.jpg" alt="Portrait of Vikash" />
+          <StyledImage src="/image/vikash.jpg" alt="Portrait of Vikash" />
         </div>
       </Container>
 
@@ -47,6 +47,7 @@ const StyledImage = styled("img")({
   '&:hover': { 
     transform: 'scale(1.1)', 
     boxShadow: '2px 4px 10px red',
+    transition:"0.8s"
 },
   
    

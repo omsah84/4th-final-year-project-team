@@ -10,7 +10,7 @@ import Container from '@mui/material/Container';
 import MenuIcon from '@mui/icons-material/Menu';
 import Typography from '@mui/material/Typography';
 
-const pages = [{nav:"/", list:"Home"},{nav:"#aboutus", list:"About Us"},{nav:"#contact", list:"Contact Us"},{nav:"#mywork", list:"My Work"} ];
+const pages = [{nav:"/", list:"Home"},{nav:"#mywork", list:"My Work"},{nav:"#myskill", list:"My Skill"},,{nav:"#aboutus", list:"About Us"},{nav:"#contact", list:"Contact Us"}, ];
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
