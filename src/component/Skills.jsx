@@ -33,7 +33,7 @@ const skillsData = [
 
 function Skills() {
     return (
-        <div style={{padding:"0 30px",
+        <div style={{padding:"0 10px",
             width:"100%",
             height: 'fit-content',
         }}>
