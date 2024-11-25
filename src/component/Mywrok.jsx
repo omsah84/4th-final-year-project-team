@@ -82,12 +82,13 @@ const WorkCard = styled("div")(() => ({
   boxShadow: "0px 0px 10px red",
   borderRadius: "8px",
   overflow: "hidden",
+  position: "relative", // Ensures the image stays within the card
   img: {
     width: "100%",
-    
-    borderRadius: "8px 8px 0 0",
+    height: "200px",
     objectFit: "cover",
-    height: "150px",
+    borderRadius: "8px 8px 0 0",
+    animation: "zoomInOut 3s infinite ease-in-out", // Apply infinite animation
   },
   h5: {
     margin: "10px 0",
@@ -98,16 +99,19 @@ const WorkCard = styled("div")(() => ({
     fontSize: "1rem",
     color: "#555",
   },
-
-
-  '&:hover': { 
-    transform: 'scale(1.05)', 
-    boxShadow: '2px 4px 10px red',
-    transition:"0.8s"
-},
-
-
+  "@keyframes zoomInOut": {
+    "0%": {
+      transform: "scale(1)", // Original size
+    },
+    "50%": {
+      transform: "scale(1.2)", // Zoom in
+    },
+    "100%": {
+      transform: "scale(1)", // Back to original size
+    },
+  },
 }));
+
 
 const ButtonStyle = styled("button")(() => ({
   display: "block",

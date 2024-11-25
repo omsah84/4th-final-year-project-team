@@ -11,6 +11,7 @@ function Hero() {
             display:"flex",
             alignItems:"center",
             justifyContent:"center",
+          
            
           }}
         >
@@ -43,12 +44,19 @@ const StyledImage = styled("img")({
   marginTop: "1rem",
   boxShadow: "0px 0px 10px red",
   cursor: "pointer", 
+  animation: "zoomInOut 3s infinite ease-in-out",
 
-  '&:hover': { 
-    transform: 'scale(1.1)', 
-    boxShadow: '2px 4px 10px red',
-    transition:"0.8s"
-},
+"@keyframes zoomInOut": {
+    "0%": {
+      transform: "scale(1)", // Original size
+    },
+    "50%": {
+      transform: "scale(1.05)", // Zoom in
+    },
+    "100%": {
+      transform: "scale(1)", // Back to original size
+    },
+  },
   
    
 });
@@ -57,6 +65,7 @@ const Container = styled('div')(({ theme }) => ({
   width:"100",
   display:"flex",
   textAlign:"center",
+  height:"500px",
   justifyContent:"space-around",
   [theme.breakpoints.down('md')]: {
     flexDirection: 'column-reverse',

@@ -6,11 +6,11 @@ function AboutMe() {
     return (
         <>
 
-            <Container id="aboutus">
+            <Container id="aboutus" style={{}}>
                 <div className="Aboutus" style={{
                     width: "100%",
 
-                    border: "2px solid red",
+                    boxShadow: "0px 0px 8px red",
                     textAlign: "center",
                     padding: "5px",
 
@@ -20,9 +20,10 @@ function AboutMe() {
                         width: "250px",
                         height: "250px",
                         borderRadius: "50%",
-                        padding:"3px",
+                        padding: "3px",
                         boxShadow: "0px 0px 10px red",
                         cursor: "pointer",
+                        animation: "zoomInOu 3s infinite ease-in-out",
 
 
 
@@ -36,7 +37,7 @@ function AboutMe() {
                 <div className="contactus" id="contact" style={{
                     width: "100%",
                     margin: "2px",
-                    border: "2px solid red",
+                    boxShadow: "0px 0px 8px red",
                     textAlign: "center",
                     padding: "5px",
 
@@ -115,10 +116,10 @@ export default AboutMe;
 
 const Container = styled('div')(({ theme }) => ({
     width: '100%',
-    height: 'fit-content',
+
     display: 'flex',
     justifyContent: 'space-around',
-    padding: '15px',
+    padding: '0 30px',
     gap: '10px',
     [theme.breakpoints.down('md')]: {
 
@@ -131,10 +132,21 @@ const Container = styled('div')(({ theme }) => ({
 
 const ImgStyle = styled('img')(({ theme }) => ({
 
-    '&:hover': { 
-        transform: 'scale(1.1)', 
+    '&:hover': {
+        transform: 'scale(1.1)',
         boxShadow: '2px 4px 10px red',
-        transition:"0.8s"
+        transition: "transform 0.8s ease-in-out",
+    },
+    "@keyframes zoomInOu": {
+        "0%": {
+            transform: "scale(1)",
+        },
+        "50%": {
+            transform: "scale(1.05)",
+        },
+        "100%": {
+            transform: "scale(1)",
+        },
     },
 
 }));

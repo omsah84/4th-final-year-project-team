@@ -33,7 +33,10 @@ const skillsData = [
 
 function Skills() {
     return (
-        <>
+        <div style={{padding:"0 30px",
+            width:"100%",
+            height: 'fit-content',
+        }}>
             <Header id='myskill'>Skills</Header>
             <div className="container" >
                 <SkillsContainer>
@@ -49,7 +52,7 @@ function Skills() {
                   
                 </SkillsContainer>
             </div>
-        </>
+        </div>
     );
 }
 
@@ -58,7 +61,7 @@ export default Skills;
 const Header = styled('h1')({
     display: 'flex',
     justifyContent: 'center',
-    padding: '10px',
+   
    
 
     
@@ -69,8 +72,8 @@ const SkillsContainer = styled('div')({
     flexWrap: 'wrap',
     justifyContent: 'space-around',
     gap: '10px',
-    padding: '20px 25px 25px 25px',
-    backgroundColor:'black',
+    padding: '20px 0px',
+    
     
     
 
