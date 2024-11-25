@@ -119,8 +119,8 @@ const Container = styled('div')(({ theme }) => ({
 
     display: 'flex',
     justifyContent: 'space-around',
-    padding: '0 1`0px',
-    gap: '10px',
+    padding: '0 15px',
+    gap: '15px',
     [theme.breakpoints.down('md')]: {
 
         flexDirection: "column",
