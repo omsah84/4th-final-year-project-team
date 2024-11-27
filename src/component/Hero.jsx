@@ -4,27 +4,27 @@ function Hero() {
   return (
     <>
       <Container>
-        <div
+        <Contentsss
           className="left"
           style={{
             width: "100%",
-            display:"flex",
-            alignItems:"center",
-            justifyContent:"center",
-          
-           
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+
+
           }}
         >
           <h1 >
-            Hey, I am <span style={{color:"red"}}>Vikash Kumar Upadhyay</span><br/> I make software</h1>
-        </div>
+            Hey, I am <span style={{ color: "red" }}>Vikash Kumar Upadhyay</span><br /> I make software</h1>
+        </Contentsss>
         <div
           className="right"
           style={{
             width: "100%",
-            display:"flex",
-            alignItems:"center",
-            justifyContent:"center",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
           }}
         >
           <StyledImage src="/image/vikash.jpg" alt="Portrait of Vikash" />
@@ -43,10 +43,10 @@ const StyledImage = styled("img")({
   borderRadius: "50%",
   marginTop: "1rem",
   boxShadow: "0px 0px 10px red",
-  cursor: "pointer", 
+  cursor: "pointer",
   animation: "zoomInOut 3s infinite ease-in-out",
 
-"@keyframes zoomInOut": {
+  "@keyframes zoomInOut": {
     "0%": {
       transform: "scale(1)", // Original size
     },
@@ -57,18 +57,33 @@ const StyledImage = styled("img")({
       transform: "scale(1)", // Back to original size
     },
   },
-  
-   
+
+
 });
 
 const Container = styled('div')(({ theme }) => ({
-  width:"100",
-  display:"flex",
-  textAlign:"center",
-  height:"500px",
-  justifyContent:"space-around",
+  width: "100",
+  display: "flex",
+  textAlign: "center",
+  height: "500px",
+  justifyContent: "space-around",
   [theme.breakpoints.down('md')]: {
     flexDirection: 'column-reverse',
+  },
+
+}));
+
+
+const Contentsss = styled('div')(({ theme }) => ({
+  width: "100%",
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "center",
+
+
+
+  [theme.breakpoints.down('md')]: {
+    fontSize:"9px"
   },
 
 }));
