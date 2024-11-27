@@ -10,7 +10,7 @@ import Container from '@mui/material/Container';
 import MenuIcon from '@mui/icons-material/Menu';
 import Typography from '@mui/material/Typography';
 
-const pages = [{nav:"/", list:"Home"},{nav:"#mywork", list:"My Work"},{nav:"#myskill", list:"My Skill"},,{nav:"#aboutus", list:"About Us"},{nav:"#contact", list:"Contact Us"}, ];
+const pages = [{ nav: "/", list: "Home" }, { nav: "#mywork", list: "My Work" }, { nav: "#myskill", list: "My Skill" }, , { nav: "#aboutus", list: "About Us" }, { nav: "#contact", list: "Contact Us" },];
 
 function Header() {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -42,18 +42,18 @@ function Header() {
               textDecoration: 'none',
             }}
           >
-           My Portfolio
+            My Portfolio
           </Typography>
 
           {/* Mobile Menu Icon */}
-          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } , justifyContent: 'right'}}>
+          <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' }, justifyContent: 'right' }}>
             <IconButton
               size="large"
               aria-label="open menu"
               onClick={handleOpenNavMenu}
-              sx = {{color:"red"}}
-             
-           
+              sx={{ color: "red" }}
+
+
             >
               <MenuIcon />
             </IconButton>
@@ -68,7 +68,7 @@ function Header() {
               transformOrigin={{
                 vertical: 'top',
                 horizontal: 'left',
-               
+
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
@@ -80,10 +80,15 @@ function Header() {
                 },
               }}
             >
-              {pages.map((page,index) => (
-                <MenuItem sx={{maxwidth:'500px',height:'auto',color:'gray' ,display: { xs: 'flex',justifyContent:'center' }}} key={index} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page.list}</Typography>
-                </MenuItem>
+              {pages.map((page, index) => (
+                <Button
+                  key={index}
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: 'gray', display: 'block' }}
+                  href={page.nav}
+                >
+                  {page.list}
+                </Button>
               ))}
             </Menu>
           </Box>

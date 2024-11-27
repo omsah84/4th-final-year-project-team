@@ -41,8 +41,8 @@ function MyWork() {
 
   return (
     <>
-      <h1 style={{ textAlign: "center" }}>My Work</h1>
-      <ContainerStyle id="mywork" className="container">
+      <h1 style={{ textAlign: "center" }} id="mywork">My Work</h1>
+      <ContainerStyle  className="container">
         {workList
           .slice(0, showAll ? workList.length : visibleProjects)
           .map((work, index) => (
@@ -170,57 +170,8 @@ const ButtonStyle = styled("button")(() => ({
 
 
 
-// import { styled } from "@mui/material";
+// import { styled } from "@mui/material";  
 
-// const workList = [
-//     {
-//         img:"img",
-//         title:"project",
-//         par:"lorm ipsum dolor sit amet consectetur"
-
-//     },
-//     {
-//         img:"img",
-//         title:"project",
-//         par:"lorm ipsum dolor sit amet consectetur"
-
-//     }, {
-//         img:"img",
-//         title:"project",
-//         par:"lorm ipsum dolor sit amet consectetur"
-
-//     }, {
-//         img:"img",
-//         title:"project",
-//         par:"lorm ipsum dolor sit amet consectetur"
-
-//     }, {
-//         img:"img",
-//         title:"project",
-//         par:"lorm ipsum dolor sit amet consectetur"
-
-//     }, {
-//         img:"img",
-//         title:"project",
-//         par:"lorm ipsum dolor sit amet consectetur"
-
-//     }, {
-//         img:"img",
-//         title:"project",
-//         par:"lorm ipsum dolor sit amet consectetur"
-
-//     }, {
-//         img:"img",
-//         title:"project",
-//         par:"lorm ipsum dolor sit amet consectetur"
-
-//     }, {
-//         img:"img",
-//         title:"project",
-//         par:"lorm ipsum dolor sit amet consectetur"
-
-//     },
-// ];
 
 // function Mywrok() {
 //     return (
